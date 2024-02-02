@@ -1,7 +1,7 @@
 def validate_weight(weight):
     try:
         weight = float(weight)
-        if weight <= 0:
+        if weight <= 0 or weight>=200:
             return False
         return True
     except ValueError:
